@@ -1,38 +1,38 @@
 #!/usr/bin/env bash
 #
-# csd.sh - Wrapper around create-solana-dapp to make it easier to use during development
+# csd.sh - Wrapper around create-trezoa-dapp to make it easier to use during development
 #
 # These examples assume you have a symlink this script to a location in your PATH, like ~/.local/bin/csd or ~/bin/csd
-# $ ln -s $HOME/path/to/create-solana-dapp/csd.sh ~/.local/bin/csd
+# $ ln -s $HOME/path/to/create-trezoa-dapp/csd.sh ~/.local/bin/csd
 # or
-# $ ln -s $HOME/path/to/create-solana-dapp/csd.sh ~/bin/csd
+# $ ln -s $HOME/path/to/create-trezoa-dapp/csd.sh ~/bin/csd
 #
 # Create an app using the default prompts and a random unique name:
 # $ csd
 #
 # Create an app using a template and a random unique name:
-# $ csd gh:solana-foundation/templates/templates/template-node-express
+# $ csd gh:TRZLedgerFoundation/templates/templates/template-node-express
 #
 # Create an app using a template and a specific name:
-# $ csd gh:solana-foundation/templates/templates/template-node-express my-api
+# $ csd gh:TRZLedgerFoundation/templates/templates/template-node-express my-api
 #
 # Create an app using a template from a pull request number 35 (must be an active or recent PR):
-# $ csd gh:solana-foundation/templates/templates/template-node-express#refs/pull/35/merge
+# $ csd gh:TRZLedgerFoundation/templates/templates/template-node-express#refs/pull/35/merge
 #
-# Create an app using create-solana-dapp@next
+# Create an app using create-trezoa-dapp@next
 # $ TAG=next csd
 #
-# Create an app using a local create-solana-dapp command. Run `pnpm build:watch` in the create-solana-dapp directory to watch for changes.
-# $ CMD="node $HOME/path/to/create-solana-dapp/dist/bin/index.cjs --pnpm" csd
+# Create an app using a local create-trezoa-dapp command. Run `pnpm build:watch` in the create-trezoa-dapp directory to watch for changes.
+# $ CMD="node $HOME/path/to/create-trezoa-dapp/dist/bin/index.cjs --pnpm" csd
 #
 # Create an app using npx
-# $ CMD="npx -y create-solana-dapp@latest" csd
+# $ CMD="npx -y create-trezoa-dapp@latest" csd
 #
 # Create an app using yarn
-# $ CMD="yarn create solana-dapp" csd
+# $ CMD="yarn create trezoa-dapp" csd
 #
 # TODO:
-# - add support for PARAMS env var to pass additional parameters to create-solana-dapp, like --pnpm or --skip-install
+# - add support for PARAMS env var to pass additional parameters to create-trezoa-dapp, like --pnpm or --skip-install
 # - add parameters or env vars to controll package manager
 
 # Set defaults for bash
@@ -45,9 +45,9 @@ if [[ -z "${TAG+x}" ]]; then
   TAG="latest"
 fi
 
-# Check if the CMD is already set in the environment, otherwise use default "create-solana-dapp"
+# Check if the CMD is already set in the environment, otherwise use default "create-trezoa-dapp"
 if [[ -z "${CMD+x}" ]]; then
-  CMD=("pnpm" "create" "solana-dapp@${TAG}")
+  CMD=("pnpm" "create" "trezoa-dapp@${TAG}")
 else
   read -ra CMD <<< "${CMD}"
 fi

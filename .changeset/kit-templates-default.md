@@ -1,5 +1,5 @@
 ---
-"create-solana-dapp": minor
+"create-trezoa-dapp": minor
 ---
 
 Make Kit Framework templates the default choice instead of Gill.

@@ -30,13 +30,13 @@ describe('initScriptVersion', () => {
   it('should call initScriptVersionCheck with provided versions', async () => {
     const versions = {
       adb: '1.0.0',
-      anchor: '2.0.0',
-      solana: '3.0.0',
+      trezoaanchor: '2.0.0',
+      trezoa: '3.0.0',
     }
     await initScriptVersion(versions)
     expect(initScriptVersionCheck).toHaveBeenCalledWith('adb', versions.adb, false)
-    expect(initScriptVersionCheck).toHaveBeenCalledWith('anchor', versions.anchor, false)
-    expect(initScriptVersionCheck).toHaveBeenCalledWith('solana', versions.solana, false)
+    expect(initScriptVersionCheck).toHaveBeenCalledWith('trezoaanchor', versions.trezoaanchor, false)
+    expect(initScriptVersionCheck).toHaveBeenCalledWith('trezoa', versions.trezoa, false)
   })
 
   it('should log verbose message if verbose is true with no versions', async () => {
@@ -48,14 +48,14 @@ describe('initScriptVersion', () => {
   it('should log verbose message if verbose is true after version checks', async () => {
     const versions = {
       adb: '1.0.0',
-      anchor: '2.0.0',
-      solana: '3.0.0',
+      trezoaanchor: '2.0.0',
+      trezoa: '3.0.0',
     }
     const tag = 'initScriptVersion'
     await initScriptVersion(versions, true)
     expect(initScriptVersionCheck).toHaveBeenCalledWith('adb', versions.adb, true)
-    expect(initScriptVersionCheck).toHaveBeenCalledWith('anchor', versions.anchor, true)
-    expect(initScriptVersionCheck).toHaveBeenCalledWith('solana', versions.solana, true)
+    expect(initScriptVersionCheck).toHaveBeenCalledWith('trezoaanchor', versions.trezoaanchor, true)
+    expect(initScriptVersionCheck).toHaveBeenCalledWith('trezoa', versions.trezoa, true)
     expect(log.warn).toHaveBeenCalledWith(`${tag}: done`)
   })
 })

@@ -1,15 +1,15 @@
 {
-  "name": "create-solana-dapp",
+  "name": "create-trezoa-dapp",
   "version": "4.7.1",
-  "description": "The fastest way to create Solana apps",
+  "description": "The fastest way to create Trezoa apps",
   "repository": {
-    "name": "solana-foundation/create-solana-dapp",
+    "name": "TRZLedgerFoundation/create-trezoa-dapp",
     "type": "git",
-    "url": "https://github.com/solana-foundation/create-solana-dapp"
+    "url": "https://github.com/TRZLedgerFoundation/create-trezoa-dapp"
   },
-  "homepage": "https://github.com/solana-foundation/create-solana-dapp#readme",
+  "homepage": "https://github.com/TRZLedgerFoundation/create-trezoa-dapp#readme",
   "bugs": {
-    "url": "https://github.com/solana-foundation/create-solana-dapp/issues"
+    "url": "https://github.com/TRZLedgerFoundation/create-trezoa-dapp/issues"
   },
   "license": "MIT",
   "sideEffects": false,
@@ -28,7 +28,7 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
-    "create-solana-dapp": "./dist/bin/index.cjs"
+    "create-trezoa-dapp": "./dist/bin/index.cjs"
   },
   "files": [
     "dist"
@@ -37,8 +37,8 @@
     "build": "unbuild",
     "build:watch": "unbuild --watch",
     "dev": "vitest dev",
-    "docker:build": "docker build -t create-solana-dapp:latest .",
-    "docker:run": "docker run --rm --name create-solana-dapp -v \"${PWD}/dist:/workspace/dist\" -it create-solana-dapp:latest",
+    "docker:build": "docker build -t create-trezoa-dapp:latest .",
+    "docker:run": "docker run --rm --name create-trezoa-dapp -v \"${PWD}/dist:/workspace/dist\" -it create-trezoa-dapp:latest",
     "lint": "eslint .",
     "lint:fix": "automd && eslint . --fix",
     "prepublishOnly": "pnpm pkg delete devDependencies",
@@ -105,7 +105,7 @@
     }
   ],
   "keywords": [
-    "solana",
+    "trezoa",
     "next",
     "react",
     "web3",

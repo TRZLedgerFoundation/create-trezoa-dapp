@@ -13,20 +13,20 @@ describe('getVersionUrls', () => {
     })
   })
 
-  it('should return install and update urls for "anchor" with required version', () => {
+  it('should return install and update urls for "trezoaanchor" with required version', () => {
     const requiredVersion = 'v0.20.1'
-    const urls = getVersionUrls('anchor' as VersionCommand, requiredVersion)
+    const urls = getVersionUrls('trezoaanchor' as VersionCommand, requiredVersion)
     expect(urls).toEqual({
-      install: 'https://www.anchor-lang.com/docs/installation',
-      update: `https://www.anchor-lang.com/release-notes/${requiredVersion}`,
+      install: 'https://www.trezoaanchor-lang.com/docs/installation',
+      update: `https://www.trezoaanchor-lang.com/release-notes/${requiredVersion}`,
     })
   })
 
-  it('should return install url for "solana"', () => {
-    const urls = getVersionUrls('solana' as VersionCommand, '')
+  it('should return install url for "trezoa"', () => {
+    const urls = getVersionUrls('trezoa' as VersionCommand, '')
     expect(urls).toEqual({
-      install: 'https://solana.com/docs/intro/installation',
-      update: 'https://solana.com/docs/intro/installation',
+      install: 'https://trezoa.com/docs/intro/installation',
+      update: 'https://trezoa.com/docs/intro/installation',
     })
   })
 

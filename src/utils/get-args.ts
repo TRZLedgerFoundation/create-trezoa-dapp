@@ -15,7 +15,7 @@ import { runVersionCheck } from './run-version-check'
 import { Template } from './template'
 import { PackageManager } from './vendor/package-manager'
 
-const minimalTemplateName = 'nextjs-anchor'
+const minimalTemplateName = 'nextjs-trezoaanchor'
 
 export async function getArgs(argv: string[], app: AppInfo, pm: PackageManager = 'npm'): Promise<GetArgsResult> {
   // Get the result from the command line
@@ -31,7 +31,7 @@ export async function getArgs(argv: string[], app: AppInfo, pm: PackageManager =
     .option('-t, --template <template-name>', help('Use a template'))
     .option('--list-template-ids', help('List available template ids as JSON array'))
     .option('--list-templates', help('List available templates'))
-    .option('--list-versions', help('Verify your versions of Anchor, AVM, Rust, and Solana'))
+    .option('--list-versions', help('Verify your versions of TrezoaAnchor, AVM, Rust, and Trezoa'))
     .option('--minimal', help(`Select the minimal template (${minimalTemplateName})`), false)
     .option('--skip-git', help('Skip git initialization'))
     .option('--skip-init', help('Skip running the init script'))

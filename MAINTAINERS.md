@@ -1,4 +1,4 @@
-# Maintaining create-solana-dapp
+# Maintaining create-trezoa-dapp
 
 The document has information for the maintainers of this package.
 
@@ -21,7 +21,7 @@ version.
 
 ## Publishing new versions
 
-New versions of `create-solana-dapp` are published via the GitHub Actions CI/CD.
+New versions of `create-trezoa-dapp` are published via the GitHub Actions CI/CD.
 
 When a PR is merged to the `main` branch, a canary release will be published and tagged with `canary` with all the
 merged changes.

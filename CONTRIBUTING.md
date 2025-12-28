@@ -1,4 +1,4 @@
-# Contributing to create-solana-dapp
+# Contributing to create-trezoa-dapp
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
@@ -28,10 +28,10 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 In short, when you submit code changes, your submissions are understood to be under the same
 [MIT License](https://choosealicense.com/licenses/mit/) that covers the project.
 
-## Report bugs using GitHub's [issues](https://github.com/solana-foundation/create-solana-dapp/issues)
+## Report bugs using GitHub's [issues](https://github.com/TRZLedgerFoundation/create-trezoa-dapp/issues)
 
 We use GitHub issues to track public bugs. Report a bug by
-[opening a new issue](https://github.com/solana-foundation/create-solana-dapp/issues/new); it's that easy!
+[opening a new issue](https://github.com/TRZLedgerFoundation/create-trezoa-dapp/issues/new); it's that easy!
 
 **Great Bug Reports** tend to have:
 
@@ -95,7 +95,7 @@ pnpm lint
 
 If you want to quickly test your changes to the CLI, you can do the following:
 
-#### create-solana-dapp
+#### create-trezoa-dapp
 
 Run the build in watch mode in one terminal:
 
@@ -103,12 +103,12 @@ Run the build in watch mode in one terminal:
 pnpm build:watch
 ```
 
-In another terminal, move to the directory where you want to test the `create-solana-dapp` CLI and run by invoking the
+In another terminal, move to the directory where you want to test the `create-trezoa-dapp` CLI and run by invoking the
 `node` command with the path to the compiled CLI:
 
 ```shell
 cd /tmp
-node ~/path/to/create-solana-dapp/dist/bin/index.cjs --help
+node ~/path/to/create-trezoa-dapp/dist/bin/index.cjs --help
 ```
 
 ### Committing Your Changes

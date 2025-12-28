@@ -12,10 +12,10 @@ describe('getVersion', () => {
   })
 
   it('should return version for known command', () => {
-    ;(childProcess.execSync as any).mockReturnValue('anchor-cli 0.24.2\n')
-    const version = getVersion('anchor')
+    ;(childProcess.execSync as any).mockReturnValue('trezoaanchor-cli 0.24.2\n')
+    const version = getVersion('trezoaanchor')
     expect(version).toBe('0.24.2')
-    expect(childProcess.execSync).toHaveBeenCalledWith('anchor --version', { stdio: ['ignore', 'pipe', 'ignore'] })
+    expect(childProcess.execSync).toHaveBeenCalledWith('trezoaanchor --version', { stdio: ['ignore', 'pipe', 'ignore'] })
   })
 
   it('should throw error for unknown command', () => {
@@ -24,7 +24,7 @@ describe('getVersion', () => {
 
   it('should return undefined if parsing fails', () => {
     ;(childProcess.execSync as any).mockReturnValue('Invalid output\n')
-    const version = getVersion('anchor')
+    const version = getVersion('trezoaanchor')
     expect(version).toBeUndefined()
   })
 })

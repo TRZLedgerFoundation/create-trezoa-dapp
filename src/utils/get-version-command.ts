@@ -4,10 +4,10 @@ const commandMap: Record<string, { command: string; name: string; regex: RegExp 
     name: 'Adb   ',
     regex: /Version (\d+\.\d+\.\d+)/,
   },
-  anchor: {
-    command: 'anchor --version',
-    name: 'Anchor',
-    regex: /anchor-cli (\d+\.\d+\.\d+)/,
+  trezoaanchor: {
+    command: 'trezoaanchor --version',
+    name: 'TrezoaAnchor',
+    regex: /trezoaanchor-cli (\d+\.\d+\.\d+)/,
   },
   avm: {
     command: 'avm --version',
@@ -19,10 +19,10 @@ const commandMap: Record<string, { command: string; name: string; regex: RegExp 
     name: 'Rust  ',
     regex: /rustc (\d+\.\d+\.\d+)/,
   },
-  solana: {
-    command: 'solana --version',
-    name: 'Solana',
-    regex: /solana-cli (\d+\.\d+\.\d+)/,
+  trezoa: {
+    command: 'trezoa --version',
+    name: 'Trezoa',
+    regex: /trezoa-cli (\d+\.\d+\.\d+)/,
   },
 }
 

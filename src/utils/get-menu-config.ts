@@ -4,18 +4,18 @@ import { MenuConfig } from './template-schema'
 export function getMenuConfig(): MenuConfig {
   return [
     {
-      description: 'Recommended - Uses @solana/kit and @solana/react-hooks',
+      description: 'Recommended - Uses @trezoa/kit and @trezoa/react-hooks',
       groups: ['kit'],
       id: 'kit',
       keywords: [],
       name: 'Kit Framework',
     },
     {
-      description: 'Solana Mobile Templates based on Expo',
+      description: 'Trezoa Mobile Templates based on Expo',
       groups: ['mobile'],
-      id: 'solana-mobile',
+      id: 'trezoa-mobile',
       keywords: ['expo'],
-      name: 'Solana Mobile',
+      name: 'Trezoa Mobile',
     },
     {
       description: 'Templates created by the community',
@@ -25,7 +25,7 @@ export function getMenuConfig(): MenuConfig {
       name: 'Community',
     },
     {
-      description: 'Deprecated - Uses @solana/web3.js',
+      description: 'Deprecated - Uses @trezoa/web3.js',
       groups: ['web3js'],
       id: 'web3js',
       keywords: [],

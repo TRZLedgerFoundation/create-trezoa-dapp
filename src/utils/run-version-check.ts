@@ -23,7 +23,7 @@ export async function runVersionCheck({
   const { current, latest } = await notifier.fetchInfo()
   const isCanary = current.startsWith('0.0.0-canary-')
   const isOutdated = semverGt(latest, current)
-  const command = `${packageManager} create-solana-dapp${packageManager === 'yarn' ? '' : '@latest'}`
+  const command = `${packageManager} create-trezoa-dapp${packageManager === 'yarn' ? '' : '@latest'}`
 
   if (verbose) {
     note(JSON.stringify({ command, current, isCanary, isOutdated, latest }, undefined, 2), 'Version check')

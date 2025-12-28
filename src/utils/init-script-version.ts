@@ -11,8 +11,8 @@ export async function initScriptVersion(versions?: InitScriptVersions, verbose =
     return
   }
   await initScriptVersionCheck('adb', versions.adb, verbose)
-  await initScriptVersionCheck('anchor', versions.anchor, verbose)
-  await initScriptVersionCheck('solana', versions.solana, verbose)
+  await initScriptVersionCheck('trezoaanchor', versions.trezoaanchor, verbose)
+  await initScriptVersionCheck('trezoa', versions.trezoa, verbose)
   if (verbose) {
     log.warn(`${tag}: done`)
   }

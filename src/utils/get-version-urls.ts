@@ -10,12 +10,12 @@ const urls: Record<VersionCommand, VersionUrls> = {
     install:
       'https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=physical&mode=development-build&buildEnv=local',
   },
-  anchor: {
-    install: 'https://www.anchor-lang.com/docs/installation',
-    update: 'https://www.anchor-lang.com/release-notes/{required}',
+  trezoaanchor: {
+    install: 'https://www.trezoaanchor-lang.com/docs/installation',
+    update: 'https://www.trezoaanchor-lang.com/release-notes/{required}',
   },
-  solana: {
-    install: 'https://solana.com/docs/intro/installation',
+  trezoa: {
+    install: 'https://trezoa.com/docs/intro/installation',
   },
 }
 

@@ -3,7 +3,7 @@ import { getVersionCommand, getVersionCommandNames } from '../src/utils/get-vers
 
 describe('getVersionCommand', () => {
   it('should have the expected commands names', () => {
-    expect(getVersionCommandNames()).toEqual(['adb', 'anchor', 'avm', 'rust', 'solana'])
+    expect(getVersionCommandNames()).toEqual(['adb', 'trezoaanchor', 'avm', 'rust', 'trezoa'])
   })
 
   it('should have correct structure for each command', () => {

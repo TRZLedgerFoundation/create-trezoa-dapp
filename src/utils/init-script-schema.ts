@@ -1,14 +1,14 @@
 import { z } from 'zod/v3'
 
 // This is the key used in package.json to store the init script
-export const initScriptKey = 'create-solana-dapp'
+export const initScriptKey = 'create-trezoa-dapp'
 
 export const InitScriptSchemaInstructions = z.array(z.string())
 
 export const InitScriptSchemaVersions = z.object({
   adb: z.string().optional(),
-  anchor: z.string().optional(),
-  solana: z.string().optional(),
+  trezoaanchor: z.string().optional(),
+  trezoa: z.string().optional(),
 })
 
 export const InitScriptSchemaRename = z.record(

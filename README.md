@@ -1,66 +1,66 @@
-# create-solana-dapp
+# create-trezoa-dapp
 
-The fastest way to create Solana apps :rocket:
+The fastest way to create Trezoa apps :rocket:
 
 Run one command to generate a new project:
 
 ```shell
 # npm
-npm create solana-dapp@latest
+npm create trezoa-dapp@latest
 
 # pnpm
-pnpm create solana-dapp@latest
+pnpm create trezoa-dapp@latest
 
 # bun
-bun create solana-dapp@latest
+bun create trezoa-dapp@latest
 
 # yarn (only supports the 'latest' tag)
-yarn create solana-dapp
+yarn create trezoa-dapp
 ```
 
-[![npm version](https://img.shields.io/npm/v/create-solana-dapp?color=yellow)](https://npmjs.com/package/create-solana-dapp)
-[![npm downloads](https://img.shields.io/npm/dm/create-solana-dapp?color=yellow)](https://npmjs.com/package/create-solana-dapp)
+[![npm version](https://img.shields.io/npm/v/create-trezoa-dapp?color=yellow)](https://npmjs.com/package/create-trezoa-dapp)
+[![npm downloads](https://img.shields.io/npm/dm/create-trezoa-dapp?color=yellow)](https://npmjs.com/package/create-trezoa-dapp)
 
-This is a CLI that automates the initialization of predefined Solana templates (see below).
+This is a CLI that automates the initialization of predefined Trezoa templates (see below).
 
 ## Templates
 
-The official `create-solana-dapp` templates can be found in
-[this repository](https://github.com/solana-foundation/templates).
+The official `create-trezoa-dapp` templates can be found in
+[this repository](https://github.com/TRZLedgerFoundation/templates).
 
 ## External templates
 
-You can also use `create-solana-dapp` to create projects using external templates:
+You can also use `create-trezoa-dapp` to create projects using external templates:
 
 The `--template` (or `-t`) flag supports anything that [giget](https://github.com/unjs/giget) supports
 
 ```shell
 # npm
-npm create solana-dapp@latest -t <github-org>/<github-repo>
+npm create trezoa-dapp@latest -t <github-org>/<github-repo>
 
 # pnpm
-pnpm create solana-dapp@latest -t <github-org>/<github-repo>
+pnpm create trezoa-dapp@latest -t <github-org>/<github-repo>
 
 # yarn
-yarn create solana-dapp -t <github-org>/<github-repo>
+yarn create trezoa-dapp -t <github-org>/<github-repo>
 ```
 
 ## Init script
 
 Template authors can add an init script to the `package.json` file to help set up the project.
 
-Use this script to return instructions to the user, check the `anchor` and `solana` versions, and replace text and files
+Use this script to return instructions to the user, check the `trezoaanchor` and `trezoa` versions, and replace text and files
 in the project.
 
 ```jsonc
 {
   "name": "your-template",
-  "create-solana-dapp": {
+  "create-trezoa-dapp": {
     // These instructions will be returned to the user after installation
     "instructions": [
-      "Run Anchor commands:",
+      "Run TrezoaAnchor commands:",
       // Adding a '+' will make the line bold and '{pm}' is replaced with the package manager
-      "+{pm} run anchor build | test | localnet | deploy",
+      "+{pm} run trezoaanchor build | test | localnet | deploy",
     ],
     // Rename is a map of terms to rename
     "rename": {
@@ -69,14 +69,14 @@ in the project.
         // With the name of the project
         "to": "{{name}}",
         // In the following paths
-        "paths": ["anchor", "src"],
+        "paths": ["trezoaanchor", "src"],
       },
     },
     // Check versions and give a warning if it's not installed or the version is lower
     "versions": {
       "adb": "33.0.0",
-      "anchor": "0.30.1",
-      "solana": "1.18.0",
+      "trezoaanchor": "0.30.1",
+      "trezoa": "1.18.0",
     },
   },
 }
@@ -101,8 +101,8 @@ Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for m
 To install the project locally, run the following commands:
 
 ```shell
-git clone https://github.com/solana-foundation/create-solana-dapp.git
-cd create-solana-dapp
+git clone https://github.com/TRZLedgerFoundation/create-trezoa-dapp.git
+cd create-trezoa-dapp
 pnpm install
 pnpm build
 ```
