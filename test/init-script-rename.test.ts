@@ -19,7 +19,7 @@ vi.mock('@clack/prompts', () => ({
 }))
 
 describe('initScriptRename', () => {
-  const packageJsonName = 'template-project'
+  const packageJsonName = 'template-trezoa'
 
   const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {})
 
@@ -39,7 +39,7 @@ describe('initScriptRename', () => {
   const baseArgs: GetArgsResult = {
     app: { name: 'test-app', version: '1.0.0' },
     dryRun: false,
-    name: 'test-project',
+    name: 'test-trezoa',
     packageManager: 'npm',
     skipGit: false,
     skipInit: false,
@@ -49,7 +49,7 @@ describe('initScriptRename', () => {
     verbose: false,
   }
 
-  it('should rename the project based on package.json name', async () => {
+  it('should rename the trezoa based on package.json name', async () => {
     const args = { ...baseArgs }
 
     await initScriptRename(args)

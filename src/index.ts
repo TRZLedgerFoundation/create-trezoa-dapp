@@ -36,7 +36,7 @@ export async function main(argv: string[]) {
       'Installation successful',
     )
 
-    outro('Good luck with your project!')
+    outro('Good luck with your trezoa!')
   } catch (error) {
     cancel(`${error}`)
     process.exit(1)

@@ -25,7 +25,7 @@ describe('initScriptDelete', () => {
   const baseArgs: GetArgsResult = {
     app: { name: 'test-app', version: '1.0.0' },
     dryRun: false,
-    name: 'test-project',
+    name: 'test-trezoa',
     packageManager: 'npm',
     skipGit: false,
     skipInit: false,

@@ -10,10 +10,10 @@ import { namesValues } from './vendor/names'
 export async function initScriptRename(args: GetArgsResult, rename?: InitScriptRename, verbose = false) {
   const tag = `initScriptRename`
   const { contents } = getPackageJson(args.targetDirectory)
-  // Rename template from package.json to project name throughout the whole project
+  // Rename template from package.json to trezoa name throughout the whole trezoa
   if (contents.name) {
     if (args.verbose) {
-      log.warn(`${tag}: renaming template name '${contents.name}' to project name '${args.name}'`)
+      log.warn(`${tag}: renaming template name '${contents.name}' to trezoa name '${args.name}'`)
     }
     await searchAndReplace(args.targetDirectory, [contents.name], [args.name], false, verbose)
   }

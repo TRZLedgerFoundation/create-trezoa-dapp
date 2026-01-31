@@ -22,7 +22,7 @@ export async function getArgs(argv: string[], app: AppInfo, pm: PackageManager =
   const input = program
     .name(app.name)
     .version(app.version, '-V, --version', help('Output the version number'))
-    .argument('[name]', 'Name of the project (default: <prompt>)')
+    .argument('[name]', 'Name of the trezoa (default: <prompt>)')
     .option('--pm, --package-manager <package-manager>', help(`Package manager to use (default: npm)`))
     .option('--yarn', help(`Use yarn as the package manager`), false)
     .option('--pnpm', help(`Use pnpm as the package manager`), false)

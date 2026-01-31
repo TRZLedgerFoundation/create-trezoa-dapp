@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest'
 import { getPackageJsonPath } from '../src/utils/get-package-json-path'
 
 describe('getPackageJsonPath', () => {
-  it.each(['/project', '/project/subdir', '/project/', '', 'src', '.', '..', '/project with spaces'])(
+  it.each(['/trezoa', '/trezoa/subdir', '/trezoa/', '', 'src', '.', '..', '/trezoa with spaces'])(
     'returns correct path for %s',
     (input) => {
       const expected = join(input, 'package.json')

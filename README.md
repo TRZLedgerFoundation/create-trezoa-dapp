@@ -2,7 +2,7 @@
 
 The fastest way to create Trezoa apps :rocket:
 
-Run one command to generate a new project:
+Run one command to generate a new trezoa:
 
 ```shell
 # npm
@@ -47,10 +47,10 @@ yarn create trezoa-dapp -t <github-org>/<github-repo>
 
 ## Init script
 
-Template authors can add an init script to the `package.json` file to help set up the project.
+Template authors can add an init script to the `package.json` file to help set up the trezoa.
 
 Use this script to return instructions to the user, check the `trezoaanchor` and `trezoa` versions, and replace text and files
-in the project.
+in the trezoa.
 
 ```jsonc
 {
@@ -66,7 +66,7 @@ in the project.
     "rename": {
       // Rename every instance of counter
       "counter": {
-        // With the name of the project
+        // With the name of the trezoa
         "to": "{{name}}",
         // In the following paths
         "paths": ["trezoaanchor", "src"],
@@ -90,7 +90,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for m
 
 > [!TIP]
 >
-> This project uses [pnpm](https://pnpm.io/) as the package manager. If you don't have it, you can install it using
+> This trezoa uses [pnpm](https://pnpm.io/) as the package manager. If you don't have it, you can install it using
 > `corepack`:
 >
 > ```sh
@@ -98,7 +98,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for m
 > corepack prepare pnpm@10 --activate
 > ```
 
-To install the project locally, run the following commands:
+To install the trezoa locally, run the following commands:
 
 ```shell
 git clone https://github.com/TRZLedgerFoundation/create-trezoa-dapp.git

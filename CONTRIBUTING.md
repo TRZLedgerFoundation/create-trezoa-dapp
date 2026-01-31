@@ -1,6 +1,6 @@
 # Contributing to create-trezoa-dapp
 
-We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
+We love your input! We want to make contributing to this trezoa as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code
@@ -26,7 +26,7 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 ## Any contributions you make will be under the MIT Software License
 
 In short, when you submit code changes, your submissions are understood to be under the same
-[MIT License](https://choosealicense.com/licenses/mit/) that covers the project.
+[MIT License](https://choosealicense.com/licenses/mit/) that covers the trezoa.
 
 ## Report bugs using GitHub's [issues](https://github.com/TRZLedgerFoundation/create-trezoa-dapp/issues)
 
@@ -55,15 +55,15 @@ People _love_ thorough bug reports.
 In this section, you'll find the basic commands you need to run for building, testing, and maintaining the quality of
 the codebase.
 
-### Building the Project
+### Building the Trezoa
 
-To compile the project and generate the necessary artifacts, use the build command:
+To compile the trezoa and generate the necessary artifacts, use the build command:
 
 ```shell
 pnpm build
 ```
 
-You can build the project in watch mode by using the following command for faster feedback:
+You can build the trezoa in watch mode by using the following command for faster feedback:
 
 ```shell
 pnpm build:watch
@@ -85,7 +85,7 @@ pnpm dev
 
 ### Linting Your Code
 
-It's important to maintain the coding standards of the project. Lint your code by executing:
+It's important to maintain the coding standards of the trezoa. Lint your code by executing:
 
 ```shell
 pnpm lint
